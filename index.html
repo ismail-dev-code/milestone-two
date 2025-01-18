@@ -1,76 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>overflow</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>module-11</title>
     <style>
-        .box-container{
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin: 0 auto;
-            max-width: 1440px;
-        
-        }
-        .box{
-            width: 300px;
-            height: 300px;
-            border: 3px solid steelblue;
-            overflow: scroll;
-            overflow-x: hidden;
-        
-        }
-       .ellipsis{
-        margin: 0 auto;
-        width: 200px;
-        border: 2px solid steelblue;
+      nav > ul {
+        display: flex;
+        font-size: 40px;
+        list-style: none;
+        gap: 30px;
+        justify-content: center;
+      }
+      nav> ul> li a{
+        text-decoration: none;
+      }
+      nav h1{
         text-align: center;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        padding: 10px;
-        /* text-overflow: clip; */
-       }
-       .box h3{
-        color: turquoise;
-        text-align: center;
-        text-decoration: underline;
-       }
-       .box p{
-        counter-reset: lightgray;
-        padding: 5px;
-        text-align: left;
-       }
+      }
     </style>
-</head>
-<body>
-    <header>
-        <p title="I am serious learner. I do code 10 to 12 hours in every single day. I am a pro web developer. I wish my success in coding sector. This is my paragraph." class="ellipsis">I am serious learner. I do code 10 to 12 hours in every single day. I am a pro web developer. I wish my success in coding sector. This is my paragraph.</p>
-    </header>
-    <section class="box-container">
-        <!-- .box*2>h3{My Text Box $}+p>lorem200 -->
-        <div class="box">
-            <h3>My Text Box 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum impedit nulla, sapiente explicabo corrupti adipisci aspernatur officia voluptatibus saepe eius cum commodi unde quae suscipit repellat quaerat consequuntur quasi tenetur architecto voluptas earum hic laudantium? Sit non consectetur repudiandae laborum illo commodi, recusandae quod doloremque repellat excepturi eligendi harum aperiam delectus quae illum provident obcaecati architecto debitis nulla necessitatibus nesciunt nihil amet. Est omnis at tempore in cupiditate atque pariatur hic ratione distinctio nihil laudantium repellendus esse dolorem sequi aliquam qui voluptatum reprehenderit odit nesciunt consequatur quod, tempora id? Sed at deserunt veritatis ducimus aliquid illo vitae fuga. Quia incidunt tempore, beatae impedit provident, ex voluptate enim in quas repellat non tempora deserunt corrupti hic ea molestiae ipsum quaerat maxime at aliquam eius rem accusamus perspiciatis! Eligendi deserunt sapiente iusto necessitatibus magnam minus nesciunt facilis labore, error, accusantium repellat corrupti rem adipisci nisi aperiam modi aspernatur ipsa porro? Repellendus illum sapiente laboriosam dolores vitae ullam consequatur beatae similique voluptatibus illo necessitatibus commodi itaque facere labore, quasi et iure odio, consequuntur minus dignissimos ipsa minima dolore. Mollitia quidem praesentium delectus harum in nisi quia rerum pariatur asperiores nemo excepturi adipisci laborum eum amet cupiditate at, sint reiciendis nostrum impedit suscipit hic?</p>
-        </div>
-        <div class="box">
-            <h3>My Text Box 2</h3>
-            <p>At laborum temporibus corrupti et praesentium nostrum quos incidunt ut quae adipisci nesciunt magnam minima illum sed qui veniam ipsam ullam reprehenderit sapiente, natus debitis? Animi ad sapiente voluptas ullam vero? In rem laudantium iste cumque nulla dolorum incidunt adipisci odio optio repellat doloremque a nostrum quibusdam, cum dolore, suscipit ipsa ipsum. Totam quibusdam odit debitis. Dolor dolorum, minima eius doloremque numquam ab rem eos neque sed alias molestias expedita itaque id officia? Ut quo quasi tempore similique, exercitationem iure eius non dicta dolore blanditiis pariatur fuga, ullam magni vitae expedita itaque tempora atque nemo. Quae, necessitatibus ea, iure reprehenderit error numquam voluptate, eius sed nemo officiis omnis. Eum nulla quia aut dolores minima reiciendis non consequuntur necessitatibus ratione mollitia atque eos, iusto ipsa, nemo nam voluptas! Maiores ducimus corporis, recusandae at asperiores deleniti veniam facilis tempore consectetur perspiciatis in quaerat culpa quasi impedit, sit error fuga possimus. Nesciunt numquam illo mollitia molestiae inventore necessitatibus fuga similique, exercitationem repudiandae consectetur impedit omnis quod corporis iure dolor odit eius porro ab laborum eum ex accusantium quaerat at iste. Iure, ut nemo! Quaerat perspiciatis aliquam minima repudiandae, ad vitae provident qui! Dolorem vitae quo quia accusamus, repudiandae labore necessitatibus error veniam corporis.</p>
-        </div>
-        <div class="box">
-            <h3>My Text Box 3</h3>
-            <p>At laborum temporibus corrupti et praesentium nostrum quos incidunt ut quae adipisci nesciunt magnam minima illum sed qui veniam ipsam ullam reprehenderit sapiente, natus debitis? Animi ad sapiente voluptas ullam vero? In rem laudantium iste cumque nulla dolorum incidunt adipisci odio optio repellat doloremque a nostrum quibusdam, cum dolore, suscipit ipsa ipsum. Totam quibusdam odit debitis. Dolor dolorum, minima eius doloremque numquam ab rem eos neque sed alias molestias expedita itaque id officia? Ut quo quasi tempore similique, exercitationem iure eius non dicta dolore blanditiis pariatur fuga, ullam magni vitae expedita itaque tempora atque nemo. Quae, necessitatibus ea, iure reprehenderit error numquam voluptate, eius sed nemo officiis omnis. Eum nulla quia aut dolores minima reiciendis non consequuntur necessitatibus ratione mollitia atque eos, iusto ipsa, nemo nam voluptas! Maiores ducimus corporis, recusandae at asperiores deleniti veniam facilis tempore consectetur perspiciatis in quaerat culpa quasi impedit, sit error fuga possimus. Nesciunt numquam illo mollitia molestiae inventore necessitatibus fuga similique, exercitationem repudiandae consectetur impedit omnis quod corporis iure dolor odit eius porro ab laborum eum ex accusantium quaerat at iste. Iure, ut nemo! Quaerat perspiciatis aliquam minima repudiandae, ad vitae provident qui! Dolorem vitae quo quia accusamus, repudiandae labore necessitatibus error veniam corporis.</p>
-        </div>
-        <div class="box">
-            <h3>My Text Box 4</h3>
-            <p>At laborum temporibus corrupti et praesentium nostrum quos incidunt ut quae adipisci nesciunt magnam minima illum sed qui veniam ipsam ullam reprehenderit sapiente, natus debitis? Animi ad sapiente voluptas ullam vero? In rem laudantium iste cumque nulla dolorum incidunt adipisci odio optio repellat doloremque a nostrum quibusdam, cum dolore, suscipit ipsa ipsum. Totam quibusdam odit debitis. Dolor dolorum, minima eius doloremque numquam ab rem eos neque sed alias molestias expedita itaque id officia? Ut quo quasi tempore similique, exercitationem iure eius non dicta dolore blanditiis pariatur fuga, ullam magni vitae expedita itaque tempora atque nemo. Quae, necessitatibus ea, iure reprehenderit error numquam voluptate, eius sed nemo officiis omnis. Eum nulla quia aut dolores minima reiciendis non consequuntur necessitatibus ratione mollitia atque eos, iusto ipsa, nemo nam voluptas! Maiores ducimus corporis, recusandae at asperiores deleniti veniam facilis tempore consectetur perspiciatis in quaerat culpa quasi impedit, sit error fuga possimus. Nesciunt numquam illo mollitia molestiae inventore necessitatibus fuga similique, exercitationem repudiandae consectetur impedit omnis quod corporis iure dolor odit eius porro ab laborum eum ex accusantium quaerat at iste. Iure, ut nemo! Quaerat perspiciatis aliquam minima repudiandae, ad vitae provident qui! Dolorem vitae quo quia accusamus, repudiandae labore necessitatibus error veniam corporis.</p>
-        </div>
-        <div class="box">
-            <h3>My Text Box 5</h3>
-            <p>At laborum temporibus corrupti et praesentium nostrum quos incidunt ut quae adipisci nesciunt magnam minima illum sed qui veniam ipsam ullam reprehenderit sapiente, natus debitis? Animi ad sapiente voluptas ullam vero? In rem laudantium iste cumque nulla dolorum incidunt adipisci odio optio repellat doloremque a nostrum quibusdam, cum dolore, suscipit ipsa ipsum. Totam quibusdam odit debitis. Dolor dolorum, minima eius doloremque numquam ab rem eos neque sed alias molestias expedita itaque id officia? Ut quo quasi tempore similique, exercitationem iure eius non dicta dolore blanditiis pariatur fuga, ullam magni vitae expedita itaque tempora atque nemo. Quae, necessitatibus ea, iure reprehenderit error numquam voluptate, eius sed nemo officiis omnis. Eum nulla quia aut dolores minima reiciendis non consequuntur necessitatibus ratione mollitia atque eos, iusto ipsa, nemo nam voluptas! Maiores ducimus corporis, recusandae at asperiores deleniti veniam facilis tempore consectetur perspiciatis in quaerat culpa quasi impedit, sit error fuga possimus. Nesciunt numquam illo mollitia molestiae inventore necessitatibus fuga similique, exercitationem repudiandae consectetur impedit omnis quod corporis iure dolor odit eius porro ab laborum eum ex accusantium quaerat at iste. Iure, ut nemo! Quaerat perspiciatis aliquam minima repudiandae, ad vitae provident qui! Dolorem vitae quo quia accusamus, repudiandae labore necessitatibus error veniam corporis.</p>
-        </div>
-    </section>
-    
-</body>
+  </head>
+  <body>
+    <nav>
+        <h1>Module-11</h1>
+      <ul>
+        <li><a href="animation.html" target="_blank">Animation</a></li>
+        <li><a href="cricket.html" target="_blank">Cricket</a></li>
+        <li><a href="overflow.html" target="_blank">Overflow</a></li>
+        <li><a href="transform.html" target="_blank">Transform</a></li>
+        <li><a href="transition.html" target="_blank">Transition</a></li>
+        <li><a href="variable.html" target="_blank">Variable</a></li>
+        <li><a href="image.html" target="_blank">Image</a></li>
+      </ul>
+    </nav>
+  </body>
 </html>
